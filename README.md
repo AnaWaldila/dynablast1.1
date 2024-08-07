@@ -1,4 +1,4 @@
-# Dynablast Version 1.1
+# DYNAblast Version 1.1
 
 ## Introduction
 
@@ -58,16 +58,16 @@ ANALYSIS
   4. “Case 4 – td/TL x FAD – Varying W”: A specific case to analyze the behavior of uz / h when DAF (Dynamic Amplification Factor) is varying. The main step is in W. In this case, the user needs to complete the “Final TNT’s mass (kg)” and the “Number of intervals”. Consequently, in this case, is looping and the TNT’s mass to start this is completed in “Total mass (kg)” (in characteristics, TNT); 
   5. “Case 5 – td/TL x FAD – Varying Z”: A specific case to analyze the behavior of uz / h when DAF (Dynamic Amplification Factor) is variating. The main step is in Z. 
   6. “Case 6 – td/TL x FAD – Varying R”: A specific case to analyze the behavior of uz / h when DAF (Dynamic Amplification Factor) is variating. The main step is in R. 
-  7. “Case 7 – td / TL x uz / h”: A specific case to analyze the behavior of uz / h  when td / TL is variating. The main step is in Z;
-  8. “Case 8 – td / TNL x uz / h”: A specific case to analyze the behavior of uz / h  when td / TNL is variating. The main step is in Z;
-  9. “Case 9 – uz / h x stress”: A specific case to analyze the behavior of uz / h  when stress is variating. The main step is in Z;
-  10. “Case 10 – td/TL x FAD – Variating Z”: A specific case to analyze the behavior of uz / h when DAF (Dynamic Amplification Factor) is variating. The main step is in Z;
-  11. “Case 11 – General Equation”: A specific case to calculate the same graph of “Case 1”, but also show an equation that characterizes the structure, i.e., a relation of uz/h, Z, and W.
+  7. “Case 7 – td / TL x uz / h”: A specific case to analyze the behavior of uz / h  when td / TL (rate between the time of duration of positive phase and the linear period of the structure) is varying. The main step is in Z;
+  8. “Case 8 – td / TNL x uz / h”: A specific case to analyze the behavior of uz / h  when td / TNL (rate between the time of duration of positive phase and the non linear period of the structure) is varying. The main step is in Z;
+  9. “Case 9 – uz / h x stress”: A specific case to analyze the behavior of uz / h  when stress is varying. The main step is in Z;
+  10. “Case 10 – General Equation”: A specific case to calculate the same graph of “Case 1”, but showing an equation that characterizes the structure, i.e., a relation of uz/h, Z, and W.
+  11. "Case 11 - Surface W X R X uz/h": A specific case to show a 3d graphic (surface) that characterizes the the maximum displacement of the plate (uz/h) when Z and W varying. In this case, the user needs to inform the "Final TNT's mass (kg)" and the "Number of intervals" between the initial and final mass (the initial mass is the input data into the label "Total Mass (kg)").
 
 All cases are presented in Figure 2.
 
 <div>
-<img src="Figures/DYNA - 02.png" width="50%">
+<img src="Figure/Figure2.png" width="50%">
 </div>
 <p>
  <b>Figure 2:</b> DYNAblast - Input Data Cases of Analysis
@@ -75,74 +75,53 @@ All cases are presented in Figure 2.
 
 BUTTONS
 * Dynamic Analysis: In this case, output data presented are displacement, strain, and stress in the midpoint of the plate. The pressure of the loading and the Fast Fourier Transforms (FFT) are also calculated.
-* Advanced Analysis: Parametric analysis is calculated and graphics are plotted based on the pieces of information of the "Advanced Analysis", in "Analysis". 
+* Parametric Analysis: Parametric analysis is calculated and graphics are plotted based on the pieces of information of the "Parametric Analysis", i.e., the case choosen by the user.
 
 <b>Output Data</b>
-After introducing all input data, as shown in Figure 1, the user can press the button “Dynamic Analysis” or “Advanced Analysis”. The first one opens a new window, as presented in Figure 3, with the output data, i.e., tables with all displacements, stress, and strain per time, pressure, and the FFT. Also, some parameters are presented: K1, K3, u<sub>z</sub> (m), maximum static displacement (m), linear period - T<sub>L</sub> (s), nonlinear period - T<sub>NL</sub> (s), T<sub>NL</sub> / (T<sub>L</sub> + T<sub>NL</sub>), t<sub>d</sub> (s), t<sub>m</sub> (s), p<sub>max</sub> (Pa), p<sub>min</sub> (Pa), i<sub>d</sub> (Pa.m), i<sub>m</sub> (Pa.m), decay coefficient. Some of those graphics are shown in Figure 4.
+After the user introduces all input data, as shown in Figure 1, the user can press the button “Dynamic Analysis” or “Parametric Analysis”. The first one opens a new window, as presented in Figure 3, with the output data, i.e., tables with all displacements, stress, and strain per time, pressure, and the FFT. Also, some parameters are presented: K1, K3, u<sub>z</sub> (m), maximum static displacement (m), linear period - T<sub>L</sub> (s), nonlinear period - T<sub>NL</sub> (s), T<sub>NL</sub> / (T<sub>L</sub> + T<sub>NL</sub>), t<sub>d</sub> (s), t<sub>m</sub> (s), p<sub>max</sub> (Pa), p<sub>min</sub> (Pa), i<sub>d</sub> (Pa.m), i<sub>m</sub> (Pa.m), decay coefficient. Some of those graphics are shown in Figure 4 and can also be seen in DYNAblast 1.0.
 
 <div>
-<img src="Figures/DYNA - 03.png" width="80%">
+<img src="Figure/Figure3.png" width="80%">
 </div>
 <p>
  <b>Figure 3:</b> DYNAblast - Results
 </p>
 
 <div>
-<img src="Figures/DYNA - 04.png" width="80%">
+<img src="Figure/Figure4.png" width="80%">
 </div>
 <p>
  <b>Figure 4:</b> DYNAblast - Graphic Results
 </p>
 
-Clicking on the "Advanced Analysis" button, based on which case the user chose, as shown in Figure 2, one curve is plotted. Next, Figure 5 to 11 present the graphics of parametric analysis based on the input data presented in Figure 1.
+Clicking on the "Parametric Analysis" button, based on which case the user chose, as shown in Figure 2, one curve is plotted. Next, Figure 5 to 11 present the graphics of parametric analysis based on the input data presented in Figure 1.
 
 <div>
-<img src="Figures/DYNA - 05.png" width="50%">
+<img src="Figure/Figure5.png" width="100%">
 </div>
 <p>
- <b>Figure 5:</b> DYNAblast - Advanced Analysis. Case 1: Z x u<sub>z</sub> / h
+ <b>Figure 5:</b> DYNAblast - Parametric Analysis. (a) Case 1 (b) Case 2 (c) Case 3
 </p>
 
 <div>
-<img src="Figures/DYNA - 06.png" width="50%">
+<img src="Figure/Figure6.png" width="100%">
 </div>
 <p>
- <b>Figure 6:</b> DYNAblast - Advanced Analysis. Case 2: W<sub>TNT</sub> x u<sub>L</sub> / u<sub>z</sub>
+ <b>Figure 6:</b> DYNAblast - Parametric Analysis. (a) Case 4 (b) Case 5 (c) Case 6
 </p>
 
 <div>
-<img src="Figures/DYNA - 07.png" width="50%">
+<img src="Figure/Figure7.png" width="100%">
 </div>
 <p>
- <b>Figure 7:</b> DYNAblast - Advanced Analysis. Case 3: t<sub>d</sub> / T<sub>L</sub> x DAF
+ <b>Figure 7:</b> DYNAblast - Parametric Analysis. (a) Case 7 (b) Case 8 (c) Case 9
 </p>
 
 <div>
-<img src="Figures/DYNA - 08.png" width="50%">
+<img src="Figure/Figure8.png" width="80%">
 </div>
 <p>
- <b>Figure 8:</b> DYNAblast - Advanced Analysis. Case 4: t<sub>d</sub> / T<sub>L</sub> x u<sub>z</sub> / h
-</p>
-
-<div>
-<img src="Figures/DYNA - 09.png" width="50%">
-</div>
-<p>
- <b>Figure 9:</b> DYNAblast - Advanced Analysis. Case 5: t<sub>d</sub> / T<sub>NL</sub> x u<sub>z</sub> / h
-</p>
-
-<div>
-<img src="Figures/DYNA - 10.png" width="50%">
-</div>
-<p>
- <b>Figure 10:</b> DYNAblast - Advanced Analysis. Case 6: u<sub>z</sub> / h x &sigma;<sub>m</sub> / (&sigma;<sub>m</sub> + &sigma;<sub>b</sub>)
-</p>
-
-<div>
-<img src="Figures/DYNA - 11.png" width="50%">
-</div>
-<p>
- <b>Figure 11:</b> DYNAblast - Advanced Analysis. Case 7: t<sub>d</sub> / T<sub>NL</sub> x DAF
+ <b>Figure 8:</b> DYNAblast - Parametric Analysis. (a) Case 10 (b) Case 11
 </p>
 
 All these examples considered the membrane’s boundary condition as immovable. The users can generate their own analysis with another type of boundary condition.
@@ -158,38 +137,40 @@ All those pieces of information can be imported or exported to Excel or .txt fil
 6.	Poisson’s ratio;
 7.	Young’s Modulus E (N/m²);
 8.	Material density (kg/m³);
-9.	Total Mass (kg);
-10.	Scaled Distance Z (kg/m^1/3);
-11.	Type of explosion (1 for Hemispherical and 2 for Spherical)
-12.	Data type (2 for “Abaco - Rigby Calibration”, 3 for “Abaco - Ana Calibration” and 4 for “Experimental Data”)
-13.	Max Overpressure (Pa);
-14.	Max Underpressure (Pa);
-15.	Positive time (s);
-16.	Positive impulse (Pa.s);
-17.	Negative impulse (Pa.s);
-18.	Nonlinear analyses (1 for yes and 2 for no);
-19.	Negative phase (1 for yes and 2 for no);
-20.	Time of analysis.
+9. 	Distance R (m);
+10.	Total Mass (kg);
+11.	Scaled Distance Z (kg/m^1/3);
+12.	Type of explosion (1 for Hemispherical and 2 for Spherical)
+13.	Data type (2 for "Abaco - Calibration, Rigby (2013)", 3 for "Abaco - Calibration, Reis (2019)" and 4 for "Experimental Data")
+14.	Max Overpressure (Pa);
+15.	Max Underpressure (Pa);
+16.	Positive time (s);
+17.	Positive impulse (Pa.s);
+18.	Negative impulse (Pa.s);
+19.	Input Distance (1 for "Scaled Distance Z" or 2 for "Distance R")
+19.	Nonlinear analyses (1 for yes and 2 for no);
+20.	Negative phase (0 for "No", 1 for "Extended Positive Phase" and 2 for "Cubic Equation")
+21.	Time of analysis.
 
-It is possible to observe all those pieces of information in Figure 12.
+It is possible to observe all those pieces of information in Figure 9.
 
 <div>
-<img src="Figures/DYNA - 12.png" width="20%">
+<img src="Figure/Figure9.png" width="20%">
 </div>
 <p>
- <b>Figure 12:</b> DYNAblast - .txt file
+ <b>Figure 9:</b> DYNAblast - .txt file
 </p>
 
-For the graphics presented in Figures 3 to 11, it is possible to click the button on the top-left called “Save” and, naturally, save all output data in Excel.
+For the graphics presented in Figures 3 to 8, it is possible to click the button on the top-left called “Save” and, consequently, save all output data in Excel.
 
 <b>About</b>
-This software was developed by Ana W. Q. R. Reis and with the supervision of Rodrigo B. Burgos and Maria F. F. Oliveira, at Rio de Janeiro State University, as shown in Figure 13.
+This software was developed by Ph.D. Ana W. Q. R. Reis, supervised by Prof. Ph.D. Rodrigo B. Burgos and tested by Civil Engineer Mayara M. Martins, at Rio de Janeiro State University, as shown in Figure 10.
 
 <div>
-<img src="Figures/DYNA - 13.png" width="50%">
+<img src="Figure/Figure10.png" width="50%">
 </div>
 <p>
- <b>Figure 13:</b> DYNAblast - About the software
+ <b>Figure 10:</b> DYNAblast - About the software
 </p>
 
 ## References
@@ -200,6 +181,8 @@ Granström, S.A. Loading characteristics of fair blasts from detonating charges.
 
 Reis, A.W.Q.R. Dynamic analysis of plates subjected to blast load. M. Sc. Dissertation (in Portuguese), Rio de Janeiro State University, Brazil, 2019.
 
+Reis, A.W.Q.R., Burgos, R.B., Oliveira, M.F.F. DYNAblast—A software to obtain the behavior of plates subjected to blast loads. SoftwareX, 2022.
+
 Reis, A.W.Q.R., Burgos, R.B., Oliveira, M.F.F. Nonlinear Dynamic Analysis of Plates Subjected to Explosive Loads. Latin American Journal of Solids and Structures, v. 19, 2022.
 
 Rigby, S.E. and Tyas, A. (2014) Blast.m. CMD Group, University of Sheffield.
@@ -207,15 +190,16 @@ Rigby, S.E. and Tyas, A. (2014) Blast.m. CMD Group, University of Sheffield.
 Rigby, S. E., Andrew, T., Bennett, T., Clarke, S. D., Fay, S. D. The Negative Phase of the Blast Load. International Journal of Protective Structures 5(1):1-19, 2013.
 
 
-## Information about the Software
+## About the Software
 
 Rio de Janeiro State University
 
 Faculty of Engineering
 
-Developer: Ana Waldila de Queiroz Ramiro Reis
+Developer: Ph.D. Ana Waldila de Queiroz Ramiro Reis
 
-Professors: Rodrigo Bird Burgos and Maria Fernanda Figueiredo de Oliveira
+Tester: Civil. Eng. Mayara Machado Martins
 
-Contact: anawaldila@hotmail.com
+Professor: Ph.D. Rodrigo Bird Burgos
 
+E-mail: anawaldila@hotmail.com
