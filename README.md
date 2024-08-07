@@ -4,6 +4,7 @@
 
 DYNAblast is a software developed in MATLAB language, designed to obtain the behavior of a thin plate when it is subjected to blast load, considering the membrane effect. By evaluating this type of structure when subjected to explosive loads, the engineer can understand its behavior and design a structure that would be resistant to a possible collapse. Other applications correspond to military, aeronautics, marine, and platform structures, for which impact loads, such as explosions, are usually considered. Because of this, Dynablast was developed to facilitate the analysis of displacements, strain, stress, and frequency content in the midpoint of a given plate. Furthermore, parametric analyses are also possible, such as DAF (Dynamic Amplification Factor), variation of the TNT mass and scaled distance.
 DYNAblast 1.1 is a upload of [DYNAblast 1.0](https://github.com/AnaWaldila/dynablast).
+The software DYNAblast 1.1 is registrated by brazilian registration number INPI BR512024002516-2.
 
 ## Methodology
 
