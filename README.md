@@ -1,4 +1,4 @@
-# DYNAblast Version 1.1
+# DYNAblast Version 1.1.2
 
 ## Introduction
 
