@@ -3,8 +3,12 @@
 ## Introduction
 
 DYNAblast is a software developed in MATLAB language, designed to obtain the behavior of a thin plate when it is subjected to blast load, considering the membrane effect. By evaluating this type of structure when subjected to explosive loads, the engineer can understand its behavior and design a structure that would be resistant to a possible collapse. Other applications correspond to military, aeronautics, marine, and platform structures, for which impact loads, such as explosions, are usually considered. Because of this, Dynablast was developed to facilitate the analysis of displacements, strain, stress, and frequency content in the midpoint of a given plate. Furthermore, parametric analyses are also possible, such as DAF (Dynamic Amplification Factor), variation of the TNT mass and scaled distance.
-DYNAblast 1.1 is a upload of [DYNAblast 1.0](https://github.com/AnaWaldila/dynablast).
+DYNAblast 1.1 is a upload of [DYNAblast 1.0](https://github.com/AnaWaldila/dynablast). 
 The software DYNAblast 1.1 is registrated by brazilian registration number INPI BR512024002516-2.
+
+### News!
+There is a new update! You can read more about [DYNAblast 2.0](https://github.com/AnaWaldila/dynablast2.0). This new update is about laminated composite plates subjected to blast loads!
+Also, it is possible to read our publications on SoftwareX, for [SoftwareX - DYNAblast 1.1](https://www.sciencedirect.com/science/article/pii/S2352711024002243) and [SoftwareX - DYNAblast 2.0](https://www.sciencedirect.com/science/article/pii/S2352711025002328)
 
 ## Methodology
 
@@ -186,6 +190,10 @@ Reis, A.W.Q.R., Burgos, R.B., Oliveira, M.F.F. DYNAblast—A software to obtain 
 
 Reis, A.W.Q.R., Burgos, R.B., Oliveira, M.F.F. Nonlinear Dynamic Analysis of Plates Subjected to Explosive Loads. Latin American Journal of Solids and Structures, v. 19, 2022.
 
+Reis, A.W.Q.R., Martins, M.M., Burgos, R.B. Version 1.1 to – “DYNAblast – A software to obtain the behavior of composite laminated plates subjected to blast loads”. SoftwareX, 2024.
+
+Reis, A.W.Q.R., Martins, M.M., Burgos, R.B. Version 2.0 – “DYNAblast – A software to obtain the behavior of composite laminated plates subjected to blast loads”. SoftwareX, 2025.
+
 Rigby, S.E. and Tyas, A. (2014) Blast.m. CMD Group, University of Sheffield.
 
 Rigby, S. E., Andrew, T., Bennett, T., Clarke, S. D., Fay, S. D. The Negative Phase of the Blast Load. International Journal of Protective Structures 5(1):1-19, 2013.
@@ -197,7 +205,7 @@ Rio de Janeiro State University
 
 Faculty of Engineering
 
-Developer: Ph.D. Ana Waldila de Queiroz Ramiro Reis
+Developer: D.Sc Ana Waldila de Queiroz Ramiro Reis
 
 Tester: Civil. Eng. Mayara Machado Martins
 
